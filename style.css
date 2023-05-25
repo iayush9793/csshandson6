@@ -1,0 +1,369 @@
+body{
+    background: yellow;
+}
+
+
+
+ol{
+    margin-inline: auto;
+}
+
+ol li{
+    width: 400px;
+    margin: 9px auto;
+}
+
+.firstpage{
+    margin: 0px auto;
+}
+
+.artist{
+    width: 80px; 
+    display: inline-block;
+    height: 80px;
+    margin: 25px 20px;
+}
+
+.swing{
+    background: rgb(95, 95, 154);
+    animation-name: art;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes art{
+    0%{transform: skew(-20deg);}
+    50%{transform: skew(20deg);}
+    100%{transform: skew(-20deg);}
+}
+
+.second{
+    background: gray;
+    animation: second infinite 5s ease;
+}
+
+@keyframes second{
+    0%{
+        transform: skewy(-20deg);
+    }
+    50%{
+        transform: skewy(20deg);
+    }
+    100%{
+        transform: skewy(-20deg);
+    }
+}
+
+.third{
+    background-color: rgb(87, 87, 163);
+    animation-name: third;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+}
+
+@keyframes third{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.fourthy{
+    border: 3px solid rgb(71, 71, 134);
+    background:rgb(87, 87, 163);
+    animation: fourthy infinite 3s ease;
+}
+
+@keyframes fourthy{
+    0%{
+        transform: scaley(0.5);
+    }
+    50%{
+        transform: scaley(1);
+    }
+    100%{
+        transform: scaley(0.5);
+    }
+}
+
+.fourthx{
+    border: 3px solid rgb(110, 27, 27);
+    background: brown;
+    animation: fourthx infinite 3s linear;
+}
+
+@keyframes fourthx{
+    0%{
+        transform: scalex(0.5);
+    }
+    50%{
+        transform: scalex(1);
+    }
+    100%{
+        transform: scalex(0.5);
+    }
+}
+
+.third2{
+    border: 3px solid rgb(1, 78, 1);
+    background: green;
+    animation: third2 infinite 3s ease;
+}
+
+@keyframes third2{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(-90deg);
+    }
+    100%{
+        transform: scalex(0deg);
+    }
+}
+
+.box{
+    width: 100px; 
+    height: 100px;
+    margin: 15px 20px;
+}
+
+.secondpage{
+    width: 250px;
+    margin:auto;
+}
+
+.boxone{
+    background: green;
+    transition: ease 2s;
+}
+
+.boxone:hover{
+    width: 250px;
+}
+
+.boxtwo{
+    background: green;
+    transition: ease-in 2s;
+}
+
+.boxtwo:hover{
+    width: 300px;
+    height: 250px;
+}
+
+.boxthree{
+    background: green;
+    transition: ease-in-out 2s;
+}
+
+.boxthree:hover{
+    width: 300px;
+}
+
+.boxfour{
+    background: green;
+    transition: ease-out 0.5s;
+}
+
+.boxfour:hover{
+    width: 300px;
+}
+
+.box5{
+    background: green;
+    transition: linear 0.5s;
+}
+
+.box5:hover{
+    width: 300px;
+}
+
+.box6{
+    background: green;
+    transition: step-end 0.5s;
+}
+
+.box6:hover{
+    width: 300px;
+}
+
+.box7{
+    background: green;
+    transition: step-start 0.5s;
+}
+
+.box7:hover{
+    width: 300px;
+}
+
+.button{
+    padding: 10px 30px;
+    font-size: 34px;
+    text-decoration: underline;
+    color: grey;
+    margin: auto;
+    
+}
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h2{
+    text-align: center;
+}
+.bodynew{
+    background-color: aliceblue;
+}
+.btnone{
+    padding: 10px;
+   font-size: 30px;
+   color: darkslateblue;
+   text-decoration: underline;
+    transition: all 0.2s linear;
+    text-align: center;
+}
+
+.contai{
+    position: relative;
+    background-color: aliceblue;
+    
+}
+
+.bluesky{
+    background-image: url('./sky.jpg');
+    background-repeat: repeat;
+    background-position: fixed;
+    width: 100%;
+    height: 400px;
+}
+
+h1{
+    text-align: center;
+}
+
+.happy{
+    background-color: orange;
+} 
+
+.independence{
+    background-color: white;
+} 
+
+.day{
+    background-color: green; 
+}
+
+.city{
+    height: 300px;
+    width: 1500px;
+    position: absolute;
+    top: 110px;
+    animation-name: city;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes city{
+    0%{translate:0px 0px;}
+    100%{translate:-100px 0px;}
+}
+
+.road{
+    height: 150px;
+    animation-name: road;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes road{
+    0%{translate:0px 0px;}
+    100%{translate:-1000px 0px;}
+}
+
+.car{
+    width: 300px;
+    position: absolute;
+    top: 350px;
+    left: 400px;
+    animation-name: car;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+@keyframes car {
+    0%{translate:0px -1px;}
+    50%{translate:0px 0px;}
+    100%{translate:0px -1px;}
+}
+
+.backtyre{
+    width: 53px;
+    position: absolute;
+    top: 417px;
+    left: 427px;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+.fronttyre{
+    width: 53px;
+    position: absolute;
+    top: 417px;
+    left: 611px;
+    animation-name: rotate;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate{
+    from{
+        rotate: 0deg;
+    }
+    to{
+        rotate: 900deg;
+    }
+}
+
+.flag{
+    position: absolute;
+    top: 330px;
+    left: 602px;
+    width: 70px;
+}
+
+.sun{
+    width: 60px;
+    position: absolute;
+    top: 80px;
+    right:11px;
+    animation-name: sun;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes sun{
+    from{translate: 0px;}
+    to{translate:-50px;}
+}
